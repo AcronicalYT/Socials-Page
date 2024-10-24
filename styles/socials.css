@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+}
+
+.bg-video {
+    position: fixed;
+    top: -5rem;
+    left: -5rem;
+    height: 100vh;
+    width: 100vw;
+    z-index: -2;
+    overflow: hidden;
+    object-fit: cover;
+    filter: blur(0.25rem);
+    zoom: 300%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.background-blur {
+    margin: auto;
+    width: auto;
+    height: 45vh;
+    aspect-ratio: 2/1;
+    position: absolute;
+    z-index: -1;
+    border-radius: 2rem;
+    background-color: rgb(255, 255, 255, 0.25);
+    backdrop-filter: blur(0.25rem);
+    transition-duration: 0.5s;
+}
+
+.name {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+.pfp {
+    width: 7rem;
+    height: 7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.name-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin: 1rem;
+    transition-duration: 0.5s;
+}
+
+.social {
+    transition-duration: 0.5s;
+}
+
+.icon {
+    width: 4rem;
+    height: 4rem;
+    aspect-ratio: 1/1;
+    margin: 0.5rem;
+    filter: drop-shadow(0 0 0.25rem white);
+    transition-duration: 0.5s;
+}
+
+.icon:hover {
+    scale: 110%;
+    filter: drop-shadow(0 0 0.5rem white);
+    transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    .background-blur {
+        aspect-ratio: 1/2;
+        height: 80vh;
+        transition-duration: 0.5s;
+    }
+
+    .name {
+        width: 50%;
+        transition-duration: 0.5s;
+    }
+
+    .socials {
+        flex-direction: column;
+        width: 60%;
+        transition-duration: 0.5s;
+    }
+
+    .social {
+        transition-duration: 0.5s;
+    }
+
+    .icon {
+        transition-duration: 0.5s;
+    }
+}
