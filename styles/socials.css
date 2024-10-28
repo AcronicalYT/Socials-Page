@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
+    background-color: black;
 }
 
 .bg-video {
@@ -94,6 +95,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
     .background-blur {
         aspect-ratio: 1/2;
         height: 80vh;
