@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -44,7 +46,7 @@ body {
 }
 
 .name {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,8 +64,20 @@ body {
 
 .name-text {
     font-size: 1.5rem;
-    font-weight: 700;
     color: white;
+    margin: 0;
+}
+
+.pronouns {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+}
+
+.name-subtext {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
 }
 
 .socials {
